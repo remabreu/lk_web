@@ -34,9 +34,15 @@
     <script src="/static/js/tag-it.js" type="text/javascript" charset="utf-8"></script>
 
     <script type="text/javascript">
+        var foo = [];
+        $.ajax('url', {
+            success: function() {
+                foo.push();
+            }
+        })
         $(document).ready(function() {
             $("#myTags").tagit({
-                availableTags: ["c++", "java", "php", "javascript", "ruby", "python", "c"]
+                availableTags: ['batata', 'banana']
             });
         });
     </script>
